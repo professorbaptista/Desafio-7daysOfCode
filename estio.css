@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Variaveis */
 :root{
     --fundo-escuro: #000;
     --fundo-card: #1d2226;
@@ -20,18 +21,144 @@ body{
     background-color: var(--color-white);
 }
 
-main{
-    width: 840px;
-    height: 540px;
-    background-color: #000000;
+/* Cabeçalho */
+header{
+    display: flex;
+    gap: 120px;
+    position: relative;
+    width: 100%;
+    height: 76px;
+    background-color: var(--texto-escuro);
     margin: auto;
 }
 
+
+.logo{
+    display: flex;
+    gap: 50px;
+ }
+ 
+ /* logotipo da linkedIn */
+
+ .in{
+     margin-left: 10%;
+     padding: 30px 0;
+ }
+
+ /* container de input de pesquisa e label */
+ .div1{
+     display: flex;
+     background-color: #fff;  
+     width: 350px; 
+     height: 30px; 
+     border-radius: 10px;
+     margin-top: 7%;
+ }
+
+ /* input de pesquisa */
+ input{
+    position: relative;
+    width: 370px;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    margin-left: 6%;
+    border-radius: 10px;
+    height: 30px;
+    color: #000;
+} 
+
+/* lupa de pesqquisa */
+label{
+    position: absolute; 
+    top: 45%; 
+    margin-left: .2%;
+    /* border-right: 2px solid #888; */
+}
+
+/* Menu principal */
+
+.navbar ul{
+    list-style-type: none;
+    padding: 10px 0;
+    
+}
+
+ul li{
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-right: 8px;
+    
+}
+li a{
+    text-decoration: none;
+    color: var(--texto-secundario);
+    text-align: center;
+    transition: all .4s ease;
+}
+
+li a:hover{
+    color: #fff;
+}
+
+.span{
+    margin-left: 5%;
+    transition: all .5s ease-in-out;  
+}
+
+.span img:hover{
+    color: #00f;
+}
+/* Icone do navbar */
+#img{
+    margin-left: 25%;
+    transition: .5s ease-in;
+}
+
+#img:hover{
+    background-color: var(--color-white);
+}
+
+.menu-bar{
+    padding: 28px 0;
+    margin-right: 2%;
+    border-left: 2px solid var(--positivo);
+}
+
+
+.span1{
+    margin-left: 88%;
+    margin-bottom: 2%;
+    transition: .5s ease-in;
+}
+
+
+.span1:hover{
+    background-color: var(--color-white);
+}
+
+.menu-bar a{
+    color: var(--texto-secundario);
+    text-decoration: none;
+}
+
+.menu-bar a:hover{
+    color: var(--color-white);
+}
+
+/* informação principal */
+main{
+    width: 100%;
+    height: 540px;
+    background-color: var(--fundo-escuro);
+    margin: auto;
+}
+/* primeira secção */
 .profile-info{
     position: absolute;
-    width: 499px;
+    width: 740px;
     height: 440px;
-    top: 76px;
+    top: 96px;
     margin-left: 5%; 
     background-color:var(--fundo-card);
 }
@@ -39,28 +166,53 @@ main{
 .profile-info:hover{
     border: 3px solid var(--primario);
 }
-
+/* imagem de capa */
 .capa{
-    width: 499px;
-    height: 159px;
-    background-image: url('images-vscode.png');
+    width: 740px;
+    height: 190px;
+    background-image: url('images-vscode1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left right;
 }
 
+
 .perfil{
     display: flex;
-    gap: 49px;
+    gap: 44px;
 }
-
-img{
+/* foto de perfil */
+.img{
     border-radius: 50%;
     position: absolute;
     top: 25%;
     left: 3%;
 }
+/* tooltip text */
+.tooltip{
+    position: relative;
+    display: inline-block;
+    border: 1px dotted var(--primario);
+}
 
+.tooltip-text{
+  position: absolute;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+/* texto do lado esquerdo */
 span{
     position: absolute;
     bottom: 3%;
@@ -79,6 +231,7 @@ p{
     line-height: 1.2rem;
 }
 
+/* lado direido da primeira secção */
 .right-side{
    position: absolute;
    bottom: 10%;
@@ -94,6 +247,8 @@ p{
     border: 3px solid var(--primario); 
     padding: 6px;
    }
+
+   /* botões de acção */
 
 .btn2{
     margin-right: 4%;
