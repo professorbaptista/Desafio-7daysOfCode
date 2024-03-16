@@ -21,7 +21,7 @@ body{
 }
 
 main{
-    width: 780px;
+    width: 840px;
     height: 540px;
     background-color: #000000;
     margin: auto;
@@ -29,9 +29,103 @@ main{
 
 .profile-info{
     position: absolute;
-    width: 480px;
-    height: 368px;
+    width: 499px;
+    height: 440px;
     top: 76px;
     margin-left: 5%; 
     background-color:var(--fundo-card);
 }
+
+.profile-info:hover{
+    border: 3px solid var(--primario);
+}
+
+.capa{
+    width: 499px;
+    height: 159px;
+    background-image: url('images-vscode.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left right;
+}
+
+.perfil{
+    display: flex;
+    gap: 49px;
+}
+
+img{
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 3%;
+}
+
+span{
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+}
+
+h3{
+    color: var(--color-white);
+    font-size: 1.5rem;
+}
+
+p{
+    color: var(--texto-principal);
+    border-right: 1px solid var(--input);
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+.right-side{
+   position: absolute;
+   bottom: 10%;
+   left:53%;
+   h4{
+    color: var(--primario);
+    font-size: 1.4rem;
+    line-height: 2rem;
+   }
+}
+
+.right-side:hover{
+    border: 3px solid var(--primario); 
+    padding: 6px;
+   }
+
+.btn2{
+    margin-right: 4%;
+    background-color: var(--primario);
+    padding: 5px;
+    left: 2%;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--fundo-escuro);
+    transition: all .5s ease-in;
+}
+
+.btn2:hover{
+    background-color: var(--input);
+    color: var(--positivo);
+}
+
+button{
+    border-radius: 12px;
+    padding: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--primario);
+    background-color: var(--fundo-escuro);
+    transition: .5s ease;
+}
+
+button:hover{
+    background-color: var(--positivo);
+    color: var(--color-white);
+}
+
