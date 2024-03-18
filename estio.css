@@ -148,9 +148,12 @@ li a:hover{
 
 /* informação principal */
 main{
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px; 
+    width: 740px;
     height: 540px;
-    margin: auto;
+    
 }
 /* primeira secção */
 .profile-info{
@@ -159,6 +162,7 @@ main{
     height: 440px;
     top: 96px;
     margin-left: 5%; 
+    border-radius: 10px;
     background-color:var(--fundo-card);
 }
 
@@ -172,7 +176,7 @@ main{
     background-image: url('images-vscode1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left right;
+    background-position: center left;
 }
 
 
@@ -282,14 +286,71 @@ button:hover{
     background-color: var(--positivo);
     color: var(--color-white);
 }
+ /* Secção de aside */
+.direito{
+    position: absolute;
+    right: 5%;
+    top: 110px;
+    width: 300px;
+    height: auto;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: var(--fundo-card);  
+}
 
-/* Segunda secção */
+.direito:hover{
+    border: 2px solid var(--primario);
+}
+/* Seguidores */
+.pessoas{
+    display: flex;
+    gap: 12px;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+    padding: 5px;
+    .nome{
+        color: var(--color-white);
+        font-size: 1.1rem;
+    }
+
+    /* Botão conectar dos seguidores */
+    .conectar{
+        background-color: var(--fundo-card);
+        width: 80%;
+        border: 2px solid var(--color-white);
+        border-radius: 15px;
+        transition: all .5s ease-in;
+    }
+    .conectar:hover{
+        background-color: var(--positivo);
+    }
+}
+
+.direito1{
+    position: absolute;
+    right: 5%;
+    top: 720px;
+    width: 300px;
+    height: auto;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: var(--fundo-card); 
+}
+
+.direito1:hover{
+    border: 3px solid var(--primario);
+} 
+
+/* Segunda secção dos cards */
 .section2{
     position: absolute;
     margin-left: 5%;
     width: 740px; 
-    height: 300px;
-    padding: 10px;
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
     background-color: var(--fundo-card);
 }
 
@@ -331,3 +392,36 @@ button:hover{
     background-position: left right;
 }
 
+/* Terceira secção actividades */
+.section3{
+    position: absolute;
+    margin-left: 5%;
+    top: 990px;
+    width: 740px; 
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--fundo-card);
+}
+
+.section3:hover{
+    border: 3px solid var(--primario);
+}
+
+.activ{
+    margin: 2%;
+    display: flex;
+    gap: 17px;
+    margin-bottom: 4%;
+}
+
+.image1{
+    width: 160px;
+    height: 60px;
+    background-image: url(card2.jpg);
+}
+.image2{
+    width: 160px;
+    height: 60px;
+    background-image: url(card3.jpg);
+}
