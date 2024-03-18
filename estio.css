@@ -18,7 +18,7 @@
   }
 
 body{
-    background-color: var(--color-white);
+    background-color: var(--fundo-escuro);
 }
 
 /* Cabeçalho */
@@ -62,7 +62,7 @@ header{
     border: none;
     outline: none;
     font-size: 1.4rem;
-    margin-left: 6%;
+    margin-left: 8%;
     border-radius: 10px;
     height: 30px;
     color: #000;
@@ -71,9 +71,9 @@ header{
 /* lupa de pesqquisa */
 label{
     position: absolute; 
-    top: 45%; 
+    top: 48%; 
     margin-left: .2%;
-    /* border-right: 2px solid #888; */
+   
 }
 
 /* Menu principal */
@@ -98,7 +98,7 @@ li a{
 }
 
 li a:hover{
-    color: #fff;
+    color: var(--color-white);
 }
 
 .span{
@@ -150,7 +150,6 @@ li a:hover{
 main{
     width: 100%;
     height: 540px;
-    background-color: var(--fundo-escuro);
     margin: auto;
 }
 /* primeira secção */
@@ -282,5 +281,53 @@ button{
 button:hover{
     background-color: var(--positivo);
     color: var(--color-white);
+}
+
+/* Segunda secção */
+.section2{
+    position: absolute;
+    margin-left: 5%;
+    width: 740px; 
+    height: 300px;
+    padding: 10px;
+    background-color: var(--fundo-card);
+}
+
+.section2:hover{
+    border: 3px solid var(--primario);
+}
+/* secção dos cards */
+.sect-cards{
+    display: flex;
+    gap: 20px;
+    margin-left: 6%;
+    margin-top: 2%;
+}
+
+
+/* Os Cards */
+.card{
+    width: 200px;
+    height: 220px;
+    transition: all .5s ease-in;
+}
+
+.card1{
+    background-image: url("card1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left right;
+}
+.card2{
+    background-image: url("card2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left right;
+}
+.card3{
+    background-image: url("card3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left right;
 }
 
