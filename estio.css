@@ -32,6 +32,10 @@ header{
     margin: auto;
 }
 
+header:hover{
+    border: 3px solid var(--primario);
+}
+
 
 .logo{
     display: flex;
@@ -216,7 +220,9 @@ main{
   }
 
 /* texto do lado esquerdo */
-span{
+
+/* informações do autor */
+.span{
     position: absolute;
     bottom: 3%;
     left: 5%;
@@ -227,11 +233,20 @@ h3{
     font-size: 1.5rem;
 }
 
-p{
+.p{
     color: var(--texto-principal);
     border-right: 1px solid var(--input);
     font-size: 1rem;
     line-height: 1.2rem;
+}
+
+/* este p estiliza todos o paragrafos do site */
+p{
+    color: var(--texto-principal);
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: justify;
+    
 }
 
 /* lado direido da primeira secção */
@@ -239,6 +254,8 @@ p{
    position: absolute;
    bottom: 10%;
    left:53%;
+
+   /* estiliza a empresa e instituição */
    h4{
     color: var(--primario);
     font-size: 1.4rem;
@@ -286,7 +303,7 @@ button:hover{
     background-color: var(--positivo);
     color: var(--color-white);
 }
- /* Secção de aside */
+ /* Secção de aside lado direito do main */
 .direito{
     position: absolute;
     right: 5%;
@@ -328,10 +345,11 @@ button:hover{
     }
 }
 
+/* segunda parte do aside */
 .direito1{
     position: absolute;
     right: 5%;
-    top: 720px;
+    top: 790px;
     width: 300px;
     height: auto;
     padding: 7px;
@@ -373,6 +391,10 @@ button:hover{
     transition: all .5s ease-in;
 }
 
+.card:hover{
+    border: 3px solid var(--color-white);
+}
+
 .card1{
     background-image: url("card1.jpg");
     background-repeat: no-repeat;
@@ -392,11 +414,11 @@ button:hover{
     background-position: left right;
 }
 
-/* Terceira secção actividades */
+/* Terceira secção de actividades */
 .section3{
     position: absolute;
     margin-left: 5%;
-    top: 990px;
+    top: 1080px;
     width: 740px; 
     height: auto;
     padding: 15px;
@@ -414,7 +436,7 @@ button:hover{
     gap: 17px;
     margin-bottom: 4%;
 }
-
+/* imagens das actividades */
 .image1{
     width: 160px;
     height: 60px;
@@ -424,4 +446,19 @@ button:hover{
     width: 160px;
     height: 60px;
     background-image: url(card3.jpg);
+}
+
+.section4{
+    position: absolute;
+    margin-left: 5%;
+    top: 1550px;
+    width: 740px; 
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--fundo-card);
+}
+
+.section4:hover{
+    border: 3px solid var(--primario);
 }
