@@ -1,349 +1,376 @@
 <!DOCTYPE html>
-<html lang="pt-Pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7 daysOfCode </title>
-    <link rel="stylesheet" href="estio.css">
+    <title> Projecto 7 Days of Code</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <!-- Cabeçalho -->
+        <div class="logo-container">
+            <!-- Logotipo do linkedIn -->
+            <div class="logo">
+                <img src="linkedin.png" style="max-width: 60px;" alt="logotipo de linkedIn">
+            </div>
+            <div class="input-container">
 
-    <!-- Cabeçallho -->
-   <header>
-    <div class="logo">
-
-        <!-- logotipo do linkedin -->
-        <div class="in">
-            <img src="linkedin.png" style="width: 40px; height: 40px;" class="in-img" alt="">
+                <div class="div1" >
+                    <!-- input de pesqquisa -->
+                <div class="div2">
+                    <input type="search" name="pesquisa" id="pesquisa" placeholder="Pesquisar">
+                </div>
+                    <!-- lupa de pesquisa -->
+                <label for="pesquisa"> <a href="">
+                    <img src="lupa.png" style="width: 18px; height: 18px;" alt=""></a>
+                </label>
+                </div>
+            </div>
+            </div>
         </div>
-
-        <div class="div1" >
-            <!-- input de pesqquisa -->
-        <div class="div2">
-            <input type="search" name="pesquisa" id="pesquisa" placeholder="Pesquisar">
-        </div>
-            <!-- lupa de pesquisa -->
-        <label for="pesquisa"> <a href="">
-            <img src="lupa.png" style="width: 18px; height: 18px;" alt=""></a>
-        </label>
-        </div>
-    </div>
         <!-- Menu de navegação -->
-    <div class="navbar">
-        <ul>
-            <li><a href="#"> <img src="casa.png" style="height: 30px; width: 30px;" id="img" alt=""><br> Início </a></li>
+        <div class="navbar">
+            <div class="menu-principal">
+                <ul>
+                    <li><a href="#"> <img src="casa.png" style="max-width: 30px;" id="img" alt="Home"> <br> Início</a></li>
+                    <li><a href="#"> <img src="users_clients_group.png" style="max-width: 30px;" id="img" alt="Home"> <br> minha rede</a></li>
 
-            <li><a href="#"> <img src="users_clients_group.png" style="height: 30px; width: 30px;" id="img" alt=""><br> Minha rede </a></li>
+                    <li><a href="#"> <img src="pasta.png" style="max-width: 30px;" id="img" alt="Home"> <br> Vagas</a></li>
 
-            <li><a href="#"><img src="mensagem.png" style="height: 30px; width: 30px;" id="img" alt=""><br> Mensangem </a></li>
-            <li><a href="#"><img src="pasta.png" style="height: 30px; width: 30px;" id="img" alt=""><br> Vagas </a></li>
-
-            <li><a href="#"><img src="sino.png" style="height: 30px; width: 30px;" id="img" alt=""><br> Notificações </a></li>
-
-        </ul>
-    </div>
-    <div class="menu-bar">
-        <a href="#"><span class="span1"><img src="menu.png" style="height: 30px; width: 30px;" alt="menu-bar"></span> <br>Soluções</a>
-    </div>
-
-   </header>
-
-    <main class="container">
-        <!-- Primeira secção  -->
-        <section class="profile-info">
-
-            <!-- imagem de capa carregada por background-image -->
-            <div class="capa">
-
+                    <li><a href="#"> <img src="mensagem.png" style="max-width: 30px;" id="img" alt="Home"> <br> Mensagem</a></li>
+                    <li><a href="#"> <img src="sino.png" style="max-width: 30px;" id="img" alt="Home"> <br> Notificações</a></li>
+                </ul>
             </div>
+            <div class="menu-lateral">
+               <a href="#" class="solucoes">  <img src="menu.png" class="img2" style="max-width: 30px;" alt=""><br>Soluções</a>
+            </div>
+        </div>
 
-            <div class="perfil ">
-                <!-- foto de perfil -->
-                <div>
-                 
-                    <img src="autor.png" style="width: 105px; height: 105px;" class="img" alt="">
+    </header>
+  <main>
+    <!-- primeira parte das Informações de perfil -->
+    <div class="container1">
+        <section class="section1">
+            <div class="capa"></div>
+            <div class="perfil">
+                <div class="foto">
+                    <img src="https://github.com/professorbaptista.png" style="max-width: 140px;" id="foto-img" alt="">
+                    <h4><span>José Baptista</span></h4>
+                    <p class="p">Olá, sou o <span>José Baptista</span> <br> Desenvolvidor web front-end <br>minhas habilidades são em <br> Html |Css | Javascript | Python. <br> <span class="spa">Informações de contacto ...</span></p>
+                    <div class="botao">
+                        <button class="btn">Enviar mensangem</button>
+                        <button class="btn-mais">Mais</button>
+                    </div>
+
                 </div>
-                <!-- Informações do autor -->
-                <span class="span">
-                    <h3>José Baptista</h3>
-                            <p class="p">Desenvolvedor web <br> front-end <br> Mbondo Chapé, Totatona <br>Luanda, Angola <br>Habilidades em Html|Css|<br>Javascript|Python</p><br>
-                            <p class="p">-informações de contactos</p>
-                            <p class="p"><button class="btn2">Send a massage</button> <button >Mais</button></p>
-                </span>
-                <!-- lado direito do info -->
-                <div class="right-side">
-                    <h4>Empresa</h4>
-                    <h4>Instituíção de Ensino</h4>
+
+                <div class="texto">
+                    <div style="display: flex; gap: 10px;">
+                        <div><img src="foto-B.png" style="width: 30px; height: 50px;" alt=""></div>
+                        <div>
+                            <h2>Empresa</h2>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 10px;">
+                        <div><img src="foto-C.png" style="width: 30px; height: 50px;" alt=""></div>
+                        <div>
+                            <h2>Instituíção</h2>
+                        </div>
+                    </div>    
                 </div>
             </div>
         </section>
-
-        <!-- secão dos seguidores -->
-
-        <section class="direito">
-            <div class="pessoas">
-                <div class="seguidor">
-                    <img src="autor.png" style="height: 50px; width: 50px;" class="img2" alt="">
-                </div>
-            <div class="nome">
-                <h4>Nome e Sobrenome</h4>
-                <p>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
-                </p>
-                <button class="conectar">Conectar</button>
-            </div>   
-            </div>
-            <div class="pessoas">
-                <div class="seguidor">
-                    <img src="autor.png" style="height: 50px; width: 50px;" class="img2" alt="">
-                </div>
-            <div class="nome">
-                <h4>Nome e Sobrenome</h4>
-                <p>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
-                </p>
-                <button class="conectar">Conectar</button>
-            </div>   
-            </div>
-            <div class="pessoas">
-                <div class="seguidor">
-                    <img src="autor.png" style="height: 50px; width: 50px;" class="img2" alt="">
-                </div>
-            <div class="nome">
-                <h4>Nome e Sobrenome</h4>
-                <p>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
-                </p>
-                <button class="conectar">Conectar</button>
-            </div>   
-            </div>
-            <div class="pessoas">
-                <div class="seguidor">
-                    <img src="autor.png" style="height: 50px; width: 50px;" class="img2" alt="">
-                </div>
-            <div class="nome">
-                <h4>Nome e Sobrenome</h4>
-                <p>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
-                </p>
-                <button class="conectar">Conectar</button>
-            </div>   
-            </div>
-
-        </section>
-        <!-- Segunda parte da secção dos seguidores -->
-        <section class="direito1">
-            <div class="pessoas">
-                <div class="seguidor">
-                    <img src="autor.png" style="height: 50px; width: 50px;" class="img2" alt="">
-                </div>
-            <div class="nome">
-                <h4>Nome e Sobrenome</h4>
-                <p>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
-                </p>
-                <button class="conectar">Conectar</button>
-            </div>   
-            </div>
-            <div class="pessoas">
-                <div class="seguidor">
-                    <img src="autor.png" style="height: 50px; width: 50px;" class="img2" alt="">
-                </div>
-            <div class="nome">
-                <h4>Nome e Sobrenome</h4>
-                <p>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
-                </p>
-                <button class="conectar">Conectar</button>
-            </div>   
-            </div>
-            <div class="pessoas">
-                <div class="seguidor">
-                    <img src="autor.png" style="height: 50px; width: 50px;" class="img2" alt="">
-                </div>
-            <div class="nome">
-                <h4>Nome e Sobrenome</h4>
-                <p>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
-                </p>
-                <button class="conectar">Conectar</button>
-            </div>   
-            </div>
-            <div class="pessoas">
-                <div class="seguidor">
-                    <img src="autor.png" style="height: 50px; width: 50px;" class="img2" alt="">
-                </div>
-            <div class="nome">
-                <h4>Nome e Sobrenome</h4>
-                <p>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
-                </p>
-                <button class="conectar">Conectar</button>
-            </div>   
-            </div>
-
-        </section>
-    </main>
+        <!-- secção dos cards -->
 
         <section class="section2">
-            <h2 style="color: #fff; margin-left: 5%; margin-top: 2%; text-transform: uppercase; font-size: 1.5rem;">Destaques</h3>
-                <div class="sect-cards">
-                    <div class="card card1" >
-                        <h4>Tecnologia</h4>
-                    </div>
-                    <div class="card card2">
-                        <h4>Inovação</h4>
-                    </div>
-                    <div class="card card3">
-                        <h4>Futuro</h4>
-                    </div>
-                </div>
-               
-          
-        </section>
-        <section class="direito">
-            <h3 style="margin-top: 2%;">As pessoas também viram</h3>
-            <div class="pessoas">
-                <div class="seguidor">
-                    <img src="autor.png" style="height: 50px; width: 50px;" class="img2" alt="">
-                </div>
-                
-            <div class="nome">
-                <h4>Nome e Sobrenome</h4>
-                <p>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
-                </p>
-                <button class="conectar">Conectar</button>
-            </div>   
-            </div>
-            <div class="pessoas">
-                <div class="seguidor">
-                    <img src="autor.png" style="height: 50px; width: 50px;" class="img2" alt="">
-                </div>
-            <div class="nome">
-                <h4>Nome e Sobrenome</h4>
-                <p>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
-                </p>
-                <button class="conectar">Conectar</button>
-            </div>   
-            </div>
-            <div class="pessoas">
-                <div class="seguidor">
-                    <img src="autor.png" style="height: 50px; width: 50px;" class="img2" alt="">
-                </div>
-            <div class="nome">
-                <h4>Nome e Sobrenome</h4>
-                <p>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
-                </p>
-                <button class="conectar">Conectar</button>
-            </div>   
-            </div>
-            <div class="pessoas">
-                <div class="seguidor">
-                    <img src="autor.png" style="height: 50px; width: 50px;" class="img2" alt="">
-                </div>
-            <div class="nome">
-                <h4>Nome e Sobrenome</h4>
-                <p>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
-                </p>
-                <button class="conectar">Conectar</button>
-            </div>   
-            </div>
+            <!-- Trabalhos de destaque desenvolvidos -->
+            <h3 style="font-size: 1.4rem; margin-left: 2%;">Destaques</h3>
+            <div class="cards">
+                <div class="legenda">
+                    <p class="legend">Publicação <br>Legenda comunicação</p>
+                    <div class="card card1" > </div>
 
-        </section>
-    </main>
-            <!-- segunda secção dos cards  -->
-        <section class="section2">
-            <h2 style="color: #fff; margin-left: 5%; margin-top: 2%; text-transform: uppercase; font-size: 1.5rem;">Destaques</h2>
-            <!-- sequencia dos cards -->
-                <div class="sect-cards">
-                    <div class="legenda">
-                        <h3>Publicação</h3>
-                        <p>Legenda da primeira comunica</p>
-                        <div class="card card1" > </div>
+                    <div class="reacoes" style="display: flex; gap: 20px;">
+                            <div>
+                                <p>
+                                <img src="reacao.png" style="max-width: 20px;" alt="">121
+                    </p>
+                    </div>
+                    <div>
+                    <p> 128 comentários</p>
+                    </div> 
+                    </div>
+                </div>
+                <div class="legenda">
+                    <p class="legend">Publicação <br>Legenda comunicação</p>
+                    <div class="card card2" > </div>
 
-                        <div class="reacoes" style="display: flex; gap: 40px; margin-top: 6%;">
-                                <div>
-                                    <p>
-                                    <img src="reacao.png" style="max-width: 20px;" alt=""> 121
+                    <div class="reacoes" style="display: flex; gap: 20px;">
+                            <div>
+                                <p>
+                                <img src="reacao.png" style="max-width: 20px;" alt="">121
+                    </p>
+                    </div>
+                    <div>
+                    <p> 128 comentários</p>
+                    </div> 
+                    </div>
+                </div>
+                <div class="legenda">
+                    <p class="legend">Publicação <br>Legenda comunicação</p>
+                    <div class="card card3" > </div>
+
+                    <div class="reacoes" style="display: flex; gap: 20px;">
+                            <div>
+                                <p>
+                                <img src="reacao.png" style="max-width: 20px;" alt="">121
                                 </p>
-                                </div>
-                                <div>
-                                    <p> 128 comentários</p>
-                                </div>
-                            
-                        </div>
-                        
-                    </div>
-                    
-                    <div>
-                        <h3>Publicação</h3>
-                        <p>Legenda da Segunda </p>
-                        <div class="card card2"></div>
-
-
-                        <div class="reacoes" style="display: flex; gap: 40px; margin-top: 6%;">
-                            <div>
-                                <p>
-                                <img src="reacao.png" style="max-width: 20px;" alt=""> 91
-                            </p>
                             </div>
                             <div>
-                                <p> 145 comentários</p>
-                            </div>                    
-                        </div>
-                        
+                                <p> 128 comentários</p>
+                            </div> 
                     </div>
-                    
-                    <div>
-                        <h3>Publicação</h3>
-                        <p>Legenda da terceira </p>
-                        <div class="card card3"></div>
-                        
-                        <div class="reacoes" style="display: flex; gap: 40px; margin-top: 6%;">
-                            <div>
-                                <p>
-                                <img src="reacao.png" style="max-width: 20px;" alt=""> 111
-                            </p>
-                            </div>
-                            <div>
-                                <p> 178 comentários</p>
-                            </div>
-                        
-                    </div>
-
-
-                    </div>
-                </div>
-        </section>
-            <!-- Terceira secção actividades -->
-        <section class="section3">
-            <h2 style="color: #fff; margin-left: 5%; margin-top: 2%; text-transform: uppercase; font-size: 1.5rem;"> Actividades </h2>
-             <p style="color:#70b5f9; margin: 2%;">??? Seguidores</p>
-            <p class="h3">Nome Sobrenome publicou isso. 2 sem.</p>
-            <div class="activ">
-                <!-- imagem em frente do texto da secção actividades -->
-                <div class="image1"></div>
-
-                <!-- texto de actividades -->
-                <div class="activ-text">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, laboriosam autem distinctio voluptatum quisquam nulla! Neque dicta, eligendi aut minima iste harum vero suscipit cum ullam doloribus et obcaecati a!</p>
-                    <p><img src="reacao.png" style="max-width: 20px; margin-top: 2%;" alt=""> 323</p>
-                </div>
-            </div>
-            <p class="h3">Nome Sobrenome Partilhou isso. 1 mês.</p>
-            <!-- segunda exibição da actividades -->
-            <div class="activ">
-                <div class="image2"></div>
-                <div class="activ-text">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, laboriosam autem distinctio voluptatum quisquam nulla! Neque dicta, eligendi aut minima iste harum vero suscipit cum ullam doloribus et obcaecati a!</p>
-                    <p><img src="reacao.png" style="max-width: 20px; margin-top: 2%;" alt=""> 23</p>
                 </div>
             </div>
         </section>
 
-        <!-- Quarta seção sobre mim -->
+        <section class="section3" >
+            <!-- Actividades -->
+            <h3 style="font-size: 1.4rem; margin-left: 2%;">Actividades </h3>
+            <p class="p-2">??? Seguidores</p>
+                
+                <p>Nome sobrenome Publicou isso. 2 sem.</p>
+            </p>
+            <div class="text" style="display: flex; gap: 15px;">
+                <div id="img-1">
+                </div>
+                <div class="text1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laudantium veniam non architecto illum ex inventore? Voluptate veniam quo asperiores tempora totam, ex cum cupiditate doloribus modi eaque laboriosam pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sit fuga alias velit eligendi id perferendis illum ?</p>
+                </div>
+            </div>
+            <div class="reacoes" style="display: flex; gap: 460px;">
+                <div>
+                    <p>
+                    <img src="reacao.png" style="max-width: 20px;" alt="">421
+                    </p>
+                </div>
+                <div>
+                    <p> 628 comentários</p>
+                </div> 
+        </div>
+            <hr>
+
+            <div class="text" style="display: flex; gap: 15px;">
+                <div id="img-2">
+                </div>
+                <div class="text1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laudantium veniam non architecto illum ex inventore? Voluptate veniam quo asperiores tempora totam, ex cum cupiditate doloribus modi eaque laboriosam pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sit fuga alias velit eligendi id perferendis illum ?</p>
+                </div>
+            </div>
+
+            <div class="reacoes" style="display: flex; gap: 460px;">
+                <div>
+                    <p>
+                    <img src="reacao.png" style="max-width: 20px;" alt="">12
+                    </p>
+                </div>
+                <div>
+                    <p> 28 comentários</p>
+                </div> 
+        </div>
+
+            <div class="texto2"></div>
+        </section>
+
         <section class="section4">
-            <div class="sobre">
-                <h2 style="color: #fff; margin-left: 5%; margin-top: 2%; margin-bottom: 2%; text-transform: uppercase; font-size: 1.5rem;"> Sobre </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum in quis sed voluptatum, unde saepe dolorem eos tempore quae reprehenderit qui possimus. Cum odio laudantium optio, voluptate ab tempore ipsam?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum velit quasi saepe deleniti optio sint nesciunt quisquam doloribus dolorem sed. Debitis nisi omnis deleniti voluptatibus, quae enim. Saepe, harum doloremque?</p>
-            </div>
+            <!-- Sobre o autor -->
+            <h3 style="font-size: 1.4rem; margin-left: 2%;">Sobre</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, quae sed nam dicta hic voluptas. Numquam perspiciatis, a expedita ipsa doloremque ipsam dolore sapiente, exercitationem corrupti magnam nihil nobis voluptas!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquid in illo tenetur! Suscipit ad quaerat deserunt ratione omnis inventore, at laborum tempora rerum deleniti dolor velit, illum, quam eaque.
+            </p>
         </section>
+        <section class="section5">
+            <!-- Experiencias -->
+            <h3 style="font-size: 1.4rem; margin-left: 2%;">Experiências</h3>
+            <div class="exp" style="display: flex; gap: 10px;">
+                <div class="empresa1"></div>
+                <div class="empresa"><h3>Empresa</h3> 1 a 7 m
+                </div>
+            </div>
+
+            <div class="experiencia" style="display: flex; gap: 20px;">
+                <div class="cargo">
+                    <ul>
+                        <li style=" list-style-type: circle; border-left: 3px solid #70b5f9;">
+                            Fullstack Developer 
+                            <p style="font-size: 1rem; color: #fff;">Tempo integral</h3>
+                            <p style="margin-top: 0;">jan de 2022 ao momento - 5 meses <br>Cidade, Estado, País</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li style=" list-style-type: circle; border-left: 3px solid #70b5f9;">
+                            Fullstack Developer (JR) 
+                            <p style="font-size: 1rem; color: #fff;">Tempo integral</h3>
+                            <p style="margin-top: 0;">jan de 2022 ao momento - 5 meses <br>Cidade, Estado, País</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li style=" list-style-type: circle; border-left: 3px solid #70b5f9;">
+                            Front-end Developer 
+                            <p style="font-size: 1rem; color: #fff;">Tempo integral</h3>
+                            <p style="margin-top: 0;">jan de 2022 ao momento - 5 meses <br>Cidade, Estado, País</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+        </section>
+
+        <section class="section6">
+            <!-- Formação academica -->
+            <h3 style="font-size: 1.4rem; margin-left: 2%;">Formação Académica</h3>
+            <section class="sectA">
+                <div class="imge"></div>
+                <div class="inst">
+                    <h4>Instituíção de Ensino <br> Nome do curso <br>2012 à 2016</h4>
+                </div>
+
+        
+            </section>
+        </section>
+
+        <section class="section7">
+            <!-- Idiomas faladas -->
+            <h3 style="font-size: 1.4rem; margin-left: 2%;">Idiomas</h3>
+            <h4>Português</h4>
+            <p>Fluente ou nativo</p>
+            <hr>
+            <h4>Inglês</h4>
+            <p>Fluentemente</p>
+            <hr>
+            <h4>Francês</h4>
+            <p>Fluente</p>
+            <hr>
+            <h4>Espanhol</h4>
+            <p>Básico</p>
+            <hr>
+        </section>
+    </div>
+
+    <!-- Esta é secção paralela a secção de Informações. o aside -->
+    <div class="container2">
+        <!-- Pessoas seguindo o perfil -->
+        <aside class="aside1">
+            <h3>As pessoas também viram</h3>
+            <div class="pessoas">
+                <div class="seguidor">
+                    <img src="pessoa1.jpg" style="height: 50px; width: 50px;" class="img2" alt="">
+                  
+                </div>
+                <div class="nome">
+                   <p>Nome e Sobrenome <br>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
+                  </p>
+                  <button class="conectar">Conectar</button>
+                </div>  
+            </div>
+
+            <div class="pessoas">
+                <div class="seguidor">
+                    <img src="autor.png" style="height: 50px; width: 50px;" class="img2" alt="">
+                </div>
+                <div class="nome">
+                   <p>Nome e Sobrenome <br>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
+                  </p>
+                  <button class="conectar">Conectar</button>
+                </div>  
+            </div>
+            <div class="pessoas">
+                <div class="seguidor">
+                    <img src="pessoa2.jpg" style="height: 50px; width: 50px;" class="img2" alt="">
+                </div>
+                <div class="nome">
+                   <p>Nome e Sobrenome <br>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
+                  </p>
+                  <button class="conectar">Conectar</button>
+                </div>  
+            </div>
+            <div class="pessoas">
+                <div class="seguidor">
+                    <img src="pessoa3.jpg" style="height: 50px; width: 50px;" class="img2" alt="">
+                </div>
+                <div class="nome">
+                   <p>Nome e Sobrenome <br>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
+                  </p>
+                  <button class="conectar">Conectar</button>
+                </div>  
+            </div>
+
+        </aside>
+
+        <aside class="aside2">
+            <h3>As pessoas também viram</h3>
+            <div class="pessoas">
+                <div class="seguidor">
+                    <img src="pessoa4.jpg" style="height: 50px; width: 50px;" class="img2" alt="">
+                </div>
+                <div class="nome">
+                   <p>Nome e Sobrenome <br>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
+                  </p>
+                  <button class="conectar">Conectar</button>
+                </div>  
+            </div>
+            <div class="pessoas">
+                <div class="seguidor">
+                    <img src="pessoa5.jpg" style="height: 50px; width: 50px;" class="img2" alt="">
+                </div>
+                <div class="nome">
+                   <p>Nome e Sobrenome <br>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
+                  </p>
+                  <button class="conectar">Conectar</button>
+                </div>  
+            </div>
+            <div class="pessoas">
+                <div class="seguidor">
+                    <img src="pessoa6.jpg" style="height: 50px; width: 50px;" class="img2" alt="">
+                </div>
+                <div class="nome">
+                   <p>Nome e Sobrenome <br>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
+                  </p>
+                  <button class="conectar">Conectar</button>
+                </div>  
+            </div>
+            <div class="pessoas">
+                <div class="seguidor">
+                    <img src="pessoa7.jpg" style="height: 50px; width: 50px;" class="img2" alt="">
+                </div>
+                <div class="nome">
+                   <p>Nome e Sobrenome <br>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
+                  </p>
+                  <button class="conectar">Conectar</button>
+                </div>  
+            </div>
+            <!-- Pessoas seguindo o perfil -->
+        </aside>
+        <aside class="aside3">
+            <h3>As pessoas também viram</h3>
+            <div class="pessoas">
+                <div class="seguidor">
+                    <img src="autor.png" style="height: 50px; width: 50px;" class="img2" alt="">
+                </div>
+                <div class="nome">
+                   <p>Nome e Sobrenome <br>Titulo, Cargo e Tecnoogia <br>Lorem ipsum dolor sit amet consectetur
+                  </p>
+                  <button class="conectar">Conectar</button>
+                </div>  
+            </div>
+
+        </aside>
+    </div>
 
     
-
+  </main> 
+    
     
 </body>
 </html>
