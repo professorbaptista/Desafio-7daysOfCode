@@ -45,15 +45,15 @@ header:hover{
  /* logotipo da linkedIn */
 
  .in{
-     margin-left: 10%;
-     padding: 30px 0;
+     margin-left: 6%;
+     padding: 20px 0;
  }
 
  /* container de input de pesquisa e label */
  .div1{
      display: flex;
      background-color: #fff;  
-     width: 350px; 
+     width: 330px; 
      height: 30px; 
      border-radius: 10px;
      margin-top: 7%;
@@ -62,7 +62,7 @@ header:hover{
  /* input de pesquisa */
  input{
     position: relative;
-    width: 370px;
+    width: 330px;
     border: none;
     outline: none;
     font-size: 1.4rem;
